@@ -8,7 +8,7 @@ const todo = (state = {}, action) => {
       };
     case 'TOGGLE_TODO':
       if (state.id !== action.id) {
-        return state
+        return state;
       }
 
       return Object.assign({}, state, {
@@ -16,7 +16,7 @@ const todo = (state = {}, action) => {
       });
 
     default:
-      return state
+      return state;
   }
 };
 
@@ -32,7 +32,7 @@ const todos = (state = [], action) => {
         todo(t, action)
       );
     default:
-      return state
+      return state;
   }
 };
 
